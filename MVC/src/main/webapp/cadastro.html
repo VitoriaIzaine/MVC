@@ -1,0 +1,126 @@
+<!--
+  Feito por:
+  Ana Beatriz ---------- Ht191054x
+  Priscila Alves ------- Ht1910299
+  Vitória Santos ------- Ht191085x
+  
+  Última modificação:
+  05/08/2020
+-->
+
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>CINEMATECA</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta description="Página principal de cadastro e listagem de filme e series">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='shortcut icon' href='../webapp/css/imagens/logo.svg'>
+    <link rel='stylesheet' href='main.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="principal">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">CINEMATECA</a></li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+                <li><a href="FilmeController?acao=listar">ASSISTIDOS</a></li>
+                <li><a href="FilmeController?acao=listar">ASSISTIR</a></li>
+            </ul>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="img" src="CINEMATECA.png" alt="Primeiro Slide">
+            </div>
+        </div>
+        <div class="barra1"><br>
+            
+        </div>
+        <br>
+		
+        <div class="barra">
+            CADASTRO
+            <br>
+        </div>
+		
+		<div class="barra">
+            <br>
+        </div>
+        <div class="conteudo">
+			
+			<form action="TarefaController" method="post">
+	
+			NOME <input  id="sel" type="text" name="nomeFm" /> 
+			<br><br>
+			<label for="generoFm">GÊNERO</label>
+
+			<select id="se" name="generoFm" id="generoFm">
+			  <option value="gr1">Ação</option>
+			  <option value="gr2">Aventura</option>
+			  <option value="gr3">Comédia</option>
+			  <option value="gr4">Romance</option>
+			  <option value="gr5">Fantasia</option>
+			  <option value="gr6">Terror</option>
+			  <option value="gr7">Suspense</option>
+			  <option value="gr8">Ficção cientifica</option>
+			  <option value="gr9">Documentário</option>
+			  <option value="gr10">Animação</option>
+			 <select/>
+			<br><br>
+			<label for="platStremFm">PLATAFORMA/STREMING</label>
+
+			<select id="s" name="platStremFm" id="platStremFm">
+			  <option value="pl1">Netflix</option>
+			  <option value="pl2">Prime Video</option>
+			  <option value="pl3">Globoplay</option>
+			  <option value="pl4">Disney+</option>
+			  <option value="pl5">Telecine</option>
+			  <option value="pl6">Now</option>
+			  <option value="pl7">HBO GO</option>
+			  <option value="pl8">Starzplay</option>
+			  <option value="pl9">UOL Play</option>
+			  <option value="pl10">PlayPlus</option>
+			  
+			</select>
+			<br><br>	
+			<label  for="statusFm">STATUS</label>
+
+			<select id="sele" name="statusFm" id="statusFm">
+			  <option value="st1">A Assistir</option>
+			  <option value="st2">Estou Assistindo</option>
+			  <option value="st3">Terminei de assistir</option>
+			 <select/>	
+			 <br><br>
+			<p> AVALIAÇÃO </p>
+			<input type="radio" id="zero" name="avaliacaoFm" value="zero">
+			<label id="avaliacao" for="zero">0</label>
+			<input type="radio" id="um" name="avaliacaoFm" value="um">
+			<label id="avaliacao" for="um">1</label>
+			<input type="radio" id="dois" name="avaliacaoFm" value="dois">
+			<label id="avaliacao" for="dois">2</label>
+			<input type="radio" id="tres" name="avaliacaoFm" value="tres">
+			<label id="avaliacao" for="tres">3</label>
+			<input type="radio" id="quatro" name="avaliacaoFm" value="quatro">
+			<label id="avaliacao" for="quatro">4</label>
+			<br><br>
+			
+			<input class="botao" type="submit" value="Enviar" />	
+			</form>
+        </div>
+        <div class="rodape">
+        </div>
+ 
+    </main>
+</body>
+
+</html>
+
+			
+			
+	
